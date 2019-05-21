@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fg_personalpage"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/img_them_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/drawable_title_background_orange"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:id="@+id/iv_to_settings"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@+id/tv_title"
+            android:src="@mipmap/img_settings"/>
+    </RelativeLayout>
+    <!--个人页面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:layout_toEndOf="@id/user_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张大爷"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="联系方式：15755023853"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_to_person_message"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="88dp"
+            android:src="@mipmap/img_toright"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="#a6a3a3"/>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/frame_style_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="我的订单"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="339dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#f6be52"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/img_unfinished"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/img_unfinishorder"/>
+
+            <TextView
+                android:id="@+id/tv_unfinished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_unfinished"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="5dp"
+                android:text="未完成"/>
+
+            <ImageView
+                android:id="@+id/img_finished"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="113dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_unfinished"
+                android:src="@mipmap/img_finishedorder"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_finished"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tv_unfinished"
+                android:text="已完成"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/frame_style_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="我的地址"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="339dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6be52"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/tv_default_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="10dp"
+                android:text="默认地址"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/user_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_default_address"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="3dp"
+                android:text="安徽省滁州市滁州学院"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

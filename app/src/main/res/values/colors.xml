@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="red">#d32f2f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorToRegister">#6a6a6a</color>
+    <color name="colorIcon">#454545</color>
+    <color name="colorIcon_On">#f6be52</color>
+    <color name="base_color">#f6be52</color>
+    <color name="colorRadionButton">#f6be52</color>
+    <color name="dialogFrameColor">#26848586</color>
+    <color name="personMessageColor">#819b9999</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shop_cart_radius"
+                android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/single_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/checkbox_style"/>
+
+    <ImageView
+        android:id="@+id/iv_wash_clothes"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/single_check"
+        android:src="@mipmap/img_washclothes"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/iv_wash_clothes"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗衣服"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="价格：¥ 10"
+            android:textColor="@color/red"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:text="删除"
+        android:textColor="@color/red"/>
+</RelativeLayout>

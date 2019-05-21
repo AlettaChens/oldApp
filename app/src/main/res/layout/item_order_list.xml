@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:background="@drawable/shop_cart_radius"
+              android:layout_marginBottom="10dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_wash_clothes"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:src="@mipmap/img_washclothes"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/iv_wash_clothes"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗衣服"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="价格：¥ 10"
+            android:textColor="@color/red"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</LinearLayout>

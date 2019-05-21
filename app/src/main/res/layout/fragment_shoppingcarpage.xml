@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/fg_shoppingcarpage"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/img_them_background"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_title_background_orange"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shopCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/tv_title"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:text="全选"
+            android:id="@+id/selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:button="@drawable/checkbox_style"/>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_toLeftOf="@id/compute"
+            android:text="合计:￥0"
+            android:textColor="#ccc"/>
+
+        <Button
+            android:id="@+id/compute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="结算"
+            android:background="#F6BE52"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

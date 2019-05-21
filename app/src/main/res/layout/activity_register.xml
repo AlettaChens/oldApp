@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/main_background"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_cancel_register"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@mipmap/img_cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="50dp"
+                android:src="@mipmap/img_username" />
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:hint="请输入用户名"
+                android:textColorHint="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="50dp"
+                android:src="@mipmap/img_password" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/et_input_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:hint="请输入用户名"
+                android:textColorHint="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="55dp"
+                android:src="@mipmap/img_password" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/et_confirm_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:hint="请确认密码"
+                android:textColorHint="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/drawable_btn_background_gray"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>

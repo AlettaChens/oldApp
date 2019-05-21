@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="170dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_type_service_pic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/img_washclothes"/>
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_type_service_pic"
+            android:layout_marginStart="10dp"
+            android:text="洗衣服"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="价格: ￥15"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/addShopCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/shoppingcard"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
